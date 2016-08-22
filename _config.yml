@@ -1,0 +1,11 @@
+# Nav
+menu:
+  home: /
+  about: /about
+  archives: /archives
+  tags: /tags
+  categories: /categories
+
+
+# Read More text
+excerpt_link: "Keep Reading..."

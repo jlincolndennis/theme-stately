@@ -1,0 +1,63 @@
+.post {
+  margin-bottom: 70px; }
+
+.posted-on {
+  font-family: "Source Sans Pro", sans-serif;
+  margin-top: 30px; }
+
+.tag, .category {
+  margin-top: 20px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: lighter; }
+  .tag a, .category a {
+    color: #323232; }
+    .tag a:hover, .category a:hover {
+      color: #f37100; }
+
+.post-title {
+  font-family: "Source Serif Pro", serif; }
+
+.post-title a {
+  color: black;
+  font-family: "Source Serif Pro", serif; }
+  .post-title a:hover {
+    color: #f37100;
+    text-decoration: none; }
+
+.post-content h2 {
+  font-size: 20px;
+  color: black;
+  font-family: "Source Serif Pro", serif; }
+
+.post-content img {
+  margin: 15px 0; }
+
+.post-body {
+  padding: 0 30px 20px 30px; }
+  .post-body p {
+    color: #323232;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1.1em; }
+    .post-body p a, .post-body p a:hover {
+      color: #f37100; }
+
+.post-footer {
+  margin-top: 20px; }
+  .post-footer h5 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: lighter;
+    display: inline-block; }
+
+.share-link {
+  color: #323232; }
+  .share-link:hover {
+    color: #f37100;
+    text-decoration: none; }
+  .share-link:focus {
+    color: #323232;
+    text-decoration: none; }
+
+.share-icon {
+  font-size: 1.2em;
+  margin-right: 5px;
+  margin-left: 5px; }

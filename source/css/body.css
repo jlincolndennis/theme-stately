@@ -1,0 +1,44 @@
+html {
+  border-left: 8px solid #f37100; }
+
+body {
+  background: white; }
+
+span.glyphicon {
+  margin-right: 5px; }
+
+.post-list {
+  margin-top: 50px; }
+
+a.read-more {
+  color: #f37100;
+  text-decoration: none; }
+  a.read-more:hover {
+    text-decoration: underline; }
+
+.pagination {
+  display: block;
+  width: 200px;
+  margin: -50px auto 0; }
+
+.pager li a {
+  color: #f37100; }
+
+.doc-footer {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: lighter;
+  font-size: 16px;
+  clear: both;
+  display: block;
+  text-align: center;
+  margin-top: 60px; }
+  .doc-footer p a {
+    color: #f37100; }
+    .doc-footer p a:hover {
+      color: #f37100; }
+  .doc-footer ul li {
+    margin: 10px; }
+    .doc-footer ul li a {
+      color: #f37100; }
+      .doc-footer ul li a:hover {
+        color: #f37100; }

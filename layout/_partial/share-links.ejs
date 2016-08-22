@@ -1,0 +1,23 @@
+<% var encodedPostPerma = encodeURIComponent(item.permalink) %>
+<% var encodedPostTitle = encodeURIComponent(item.title) %>
+
+      <h5>share this post:</h5>
+      <a class="share-link" href="http://www.tumblr.com/share/link?url=<%= encodedPostPerma %>"  target="_blank">
+        <span class="share-icon icon-social-tumblr"></span>
+      </a>
+
+      <a class="share-link" href="https://twitter.com/share?url=<%= encodedPostPerma %>&via=jlincolndennis&text=Check%20out%20this%20post" target="_blank">
+        <span class="share-icon icon-social-twitter"></span>
+      </a>
+
+      <a class="share-link" href="https://www.facebook.com/sharer/sharer.php?u=<%=encodedPostPerma%>" target="_blank">
+        <span class="share-icon icon-social-facebook"></span>
+      </a>
+
+      <a class="share-link" href="http://www.reddit.com/submit?url=<%= item.permalink %>&title=<%= encodedPostTitle%>" target="_blank">
+        <span class="share-icon icon-social-reddit"></span>
+      </a>
+
+      <a class="share-link" href="mailto:?&subject=Check This Out: <%=item.title%>&body=<%=encodedPostPerma%>" target="_blank">
+        <span class="share-icon icon-envelope"></span>
+      </a>

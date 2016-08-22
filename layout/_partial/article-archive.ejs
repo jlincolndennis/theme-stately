@@ -1,0 +1,20 @@
+<article class="row">
+  <aside class="post-details col-md-2">
+    <h4 class='posted-on'><%= date(item.date) %></h4>
+
+  </aside>
+  <div class="post-body col-md-8">
+  <h2 class='post-title'><a href="<%= config.root + item.path %>"><%= item.title %></a></h2>
+
+  <div class="post-content">
+    <%- item.excerpt %>
+    <br>
+    <a class="read-more" href="<%- config.root %><%- item.path %>">
+      <%= theme.excerpt_link %>
+    </a>
+    <hr>
+  </div>
+
+</div>
+
+</article>

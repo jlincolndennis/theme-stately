@@ -1,0 +1,56 @@
+@import 'colors';
+@import 'fonts';
+
+header {
+  display: inline-block;
+  .blog-title {
+    font-family: $serif;
+    display: inline-block;
+    margin-left:20px;
+    margin-bottom: 0;
+    a {
+      color: black;
+
+      &:hover {
+        color: $orange;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .tagline {
+    font-family: $sans;
+    font-weight: lighter;
+    display: inline-block;
+    margin-left:20px;
+  }
+}
+
+nav {
+  float: right;
+  margin-top: 30px;
+  margin-right: 30px;
+  display: inline-block;
+  font-family: $sans;
+  font-weight: lighter;
+
+  @media (max-width:999px){
+    margin-top: 5px;
+    margin-left: 15px;
+    text-align: center;
+    float: none;
+
+  }
+
+  a {
+    color: $orange;
+    font-size: 18px;
+    margin-left: 5px;
+
+    &:hover {
+      color: $orange;
+      // font-weight: normal;
+
+    }
+  }
+}

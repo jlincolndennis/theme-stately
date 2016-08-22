@@ -1,0 +1,7 @@
+<h1 class="archive-title">Categories</h1>
+
+<ul class="tag_box inline list-unstyled">
+  <% site.categories.sort('name').each(function(item){ %>
+    <li class="archive-tag"><a href="<%=config.url %>/<%= item.path %>"><%= item.name %><span> (<%= item.posts.length %>)</span></a></li>
+  <% }); %>
+  </ul>

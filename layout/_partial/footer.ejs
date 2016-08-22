@@ -1,0 +1,10 @@
+<footer class='doc-footer'>
+  <p><%= config.title %> &copy forever <%= config.author %></p>
+  <p>One Classy Theme by <a href="http://jlincolndennis.com" target="_blank">J Lincoln Dennis</a> | Simple Line Icons by <a href="https://github.com/thesabbir/simple-line-icons" target="_blank">Sabbir Ahmed</a></p>
+  <ul class='list-inline'>
+    <% for (var i in theme.menu){ %>
+    <li><a class="nav-item" href="<%- url_for(theme.menu[i]) %>"><%= i %></a></li>
+    <% } %>
+  </ul>
+</footer>
+<script id="tumblr-js" async src="https://assets.tumblr.com/share-button.js"></script>

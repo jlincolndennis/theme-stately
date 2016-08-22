@@ -1,0 +1,28 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="icon" href="favicon/favicon.ico">
+    <% if(page.title) { %>
+    <title><%= page.title + ' - ' + config.title %></title>
+    <% } else { %>
+    <title><%= config.title %></title>
+
+    <% } %>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.3.2/css/simple-line-icons.css">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400|Source+Serif+Pro" rel="stylesheet">
+
+    <!-- jQuery so Bootstrap doesn't get cranky  -->
+    <%- js('jquery/jquery.min.js') %>
+
+    <!-- Bootstrap  -->
+    <%- css('bootstrap/css/bootstrap.min.css') %>
+    <%- css('bootstrap/css/bootstrap-theme.min.css') %>
+    <%- js('bootstrap/js/bootstrap.min.js') %>
+
+    <!-- Custom styles for this template -->
+    <%- css('css/style.css') %>
+</head>

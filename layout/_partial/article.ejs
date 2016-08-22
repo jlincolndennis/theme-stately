@@ -1,0 +1,48 @@
+<article class="post row">
+  <aside class="post-details col-md-2">
+    <h4 class='posted-on'><%= date(item.date) %></h4>
+    <p class="category">
+      <% if (item.categories && item.categories.length){ %>
+<%
+    var categories = [];
+    item.categories.forEach(function(category){
+        categories.push('<a href="' + config.root + category.path + '">' + category.name + '</a>');
+    });
+%>
+
+    <span class="glyphicon glyphicon-folder-open"></span>
+    <%- categories.join(' / ') %>
+<% } %>
+    </p>
+    <p class='tag'>
+      <% if (item.tags && item.tags.length){ %>
+      <%
+          var tags = [];
+          item.tags.forEach(function(tag){
+              tags.push('<a href="' + config.root + tag.path + '">' + tag.name + '</a>');
+          });
+      %>
+
+          <span class="glyphicon glyphicon-tags"></span>
+          <%- tags.join(', ') %>
+
+      <% } %>
+    </p>
+
+  </aside>
+  <div class="post-body col-md-8">
+  <h1 class='post-title'><a href="<%= config.root + item.path %>"><%= item.title %></a></h1>
+
+  <div class="post-content">
+    <%- item.content %>
+    <hr>
+  </div>
+
+  <footer class="post-footer">
+    <%- partial('_partial/share-links', {item: item}) %>
+
+  </footer>
+
+</div>
+
+</article>

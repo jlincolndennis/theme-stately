@@ -1,0 +1,39 @@
+<% var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]; %>
+
+<h1 class="archive-title">
+  <a href="<%= url_for(config.archive_dir) %>">Archives</a>
+  <% if (page.year){ %>
+    > <a href="<%- url_for(config.archive_dir + '/' + page.year) %>"><%= page.year %></a>
+  <% } %>
+  <% if (page.month){ %>
+    > <%= monthNames[page.month -1] %>
+  <% } %>
+</h1>
+
+<% var lastYear; %>
+<% var lastMonth; %>
+
+<% page.posts.each(function(item){ %>
+  <% var year =  item.date.year() %>
+  <% var month =  monthNames[item.date.month()]%>
+  <% var monthIndex =  item.date.month() + 1 %>
+  <% var monthNumber = ("0" + monthIndex).slice(-2); %>
+
+  <% if (lastYear != year && !page.year){ %>
+    <h2 class="archive-year"><a href="<%- url_for(config.archive_dir + '/' + year) %>"><%= year %></a></h2>
+  <% } %>
+
+  <% if (lastMonth != month && !page.month){ %>
+    <h3 class="archive-month"><a href="<%- url_for(config.archive_dir + '/' + year + '/' + monthNumber) %>">- <%= month %> -</a></h3>
+  <% } %>
+
+  <% if (page.year || page.month){ %>
+  <%- partial('_partial/article-archive', {item: item}) %>
+  <% } %>
+
+  <% lastMonth = month %>
+  <% lastYear = year %>
+
+<% }); %>
+
+<%- partial('_partial/pagination') %>
