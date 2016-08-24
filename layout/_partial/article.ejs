@@ -45,7 +45,7 @@
 
     <% if(page.layout === 'post' && theme.disqus_shortname){ %>
     <%- partial('_partial/comments') %>
-    <%} else { %>
+    <%} else  if (page.layout !== 'page'){ %>
       <h5 class="comment-link-wrapper"><a class="comment-link" href="<%= config.root + item.path %>#disqus_thread">leave a comment >></a></h5>
     <%}%>
   </footer>
