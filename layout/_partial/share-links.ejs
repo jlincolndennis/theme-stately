@@ -6,18 +6,18 @@
         <span class="share-icon icon-social-tumblr"></span>
       </a>
 
-      <a class="share-link" href="https://twitter.com/share?url=<%= encodedPostPerma %>&via=jlincolndennis&text=Check%20out%20this%20post" target="_blank">
+      <a class="share-link" href="https://twitter.com/share?url=<%= encodedPostPerma %>&via=<%= theme.twitter_handle %>&text=Check%20out%20this%20post" target="_blank">
         <span class="share-icon icon-social-twitter"></span>
       </a>
 
-      <a class="share-link" href="https://www.facebook.com/sharer/sharer.php?u=<%=encodedPostPerma%>" target="_blank">
+      <a class="share-link" href="https://www.facebook.com/sharer/sharer.php?u=<%= encodedPostPerma %>" target="_blank">
         <span class="share-icon icon-social-facebook"></span>
       </a>
 
-      <a class="share-link" href="http://www.reddit.com/submit?url=<%= item.permalink %>&title=<%= encodedPostTitle%>" target="_blank">
+      <a class="share-link" href="http://www.reddit.com/submit?url=<%= item.permalink %>&title=<%= encodedPostTitle %>" target="_blank">
         <span class="share-icon icon-social-reddit"></span>
       </a>
 
-      <a class="share-link" href="mailto:?&subject=Check This Out: <%=item.title%>&body=<%=encodedPostPerma%>" target="_blank">
+      <a class="share-link" href="mailto:?&subject=Check This Out: <%=item.title%>&body=<%= encodedPostPerma %>" target="_blank">
         <span class="share-icon icon-envelope"></span>
       </a>

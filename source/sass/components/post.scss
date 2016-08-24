@@ -65,16 +65,11 @@ img {
   h5 {
     font-family: $sans;
     font-weight: lighter;
-    // font-style: italic;
     display: inline-block;
   }
-  // ul li a {
-  //   margin-right: 10px;
-  //   color: $orange;
-  // }
 }
 
-.share-link {
+.share-link, .comment-link {
   color: $black;
 
   &:hover {
@@ -92,4 +87,14 @@ img {
   font-size: 1.2em;
   margin-right: 5px;
   margin-left: 5px;
+}
+
+.comments {
+  margin-top: 20px;
+}
+
+.comment-link-wrapper {
+
+  float: right;
+
 }

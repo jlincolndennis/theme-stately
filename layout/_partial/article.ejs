@@ -3,17 +3,17 @@
     <h4 class='posted-on'><%= date(item.date) %></h4>
     <p class="category">
       <% if (item.categories && item.categories.length){ %>
-<%
-    var categories = [];
-    item.categories.forEach(function(category){
-        categories.push('<a href="' + config.root + category.path + '">' + category.name + '</a>');
-    });
-%>
-
-    <span class="glyphicon glyphicon-folder-open"></span>
-    <%- categories.join(' / ') %>
-<% } %>
+      <%
+          var categories = [];
+          item.categories.forEach(function(category){
+            categories.push('<a href="' + config.root + category.path + '">' + category.name + '</a>');
+        });
+      %>
+      <span class="glyphicon glyphicon-folder-open"></span>
+      <%- categories.join(' / ') %>
+      <% } %>
     </p>
+
     <p class='tag'>
       <% if (item.tags && item.tags.length){ %>
       <%
@@ -22,10 +22,8 @@
               tags.push('<a href="' + config.root + tag.path + '">' + tag.name + '</a>');
           });
       %>
-
           <span class="glyphicon glyphicon-tags"></span>
           <%- tags.join(', ') %>
-
       <% } %>
     </p>
 
@@ -39,8 +37,16 @@
   </div>
 
   <footer class="post-footer">
-    <%- partial('_partial/share-links', {item: item}) %>
+    <% if(page.layout !== 'page' && theme.show_share_links){ %>
+      <%- partial('_partial/share-links', {item: item}) %>
+    <%}%>
 
+
+    <% if(page.layout === 'post' && theme.disqus_shortname){ %>
+    <%- partial('_partial/comments') %>
+    <%} else { %>
+      <h5 class="comment-link-wrapper"><a class="comment-link" href="<%- item.permalink %>#disqus_thread">leave a comment >></a></h5>
+    <%}%>
   </footer>
 
 </div>

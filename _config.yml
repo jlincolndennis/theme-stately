@@ -6,6 +6,16 @@ menu:
   tags: /tags
   categories: /categories
 
-
 # Read More text
 excerpt_link: "Keep Reading..."
+
+# Google Analytics Tracking ID
+# Replace 'false' with your ID to enable
+google_analytics: false
+
+# Share links
+show_share_links: true
+twitter_handle: testhandle
+
+# Comments
+disqus_shortname: jlincolndennistestblog

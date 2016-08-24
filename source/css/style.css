@@ -170,12 +170,12 @@ nav {
     font-weight: lighter;
     display: inline-block; }
 
-.share-link {
+.share-link, .comment-link {
   color: #323232; }
-  .share-link:hover {
+  .share-link:hover, .comment-link:hover {
     color: #f37100;
     text-decoration: none; }
-  .share-link:focus {
+  .share-link:focus, .comment-link:focus {
     color: #323232;
     text-decoration: none; }
 
@@ -183,3 +183,9 @@ nav {
   font-size: 1.2em;
   margin-right: 5px;
   margin-left: 5px; }
+
+.comments {
+  margin-top: 20px; }
+
+.comment-link-wrapper {
+  float: right; }
