@@ -1,7 +1,9 @@
-<% var encodedPostPerma = encodeURIComponent(item.permalink) %>
+<% var permalinkWorkAround = config.url+ '/'+ item.path %>
+<% var encodedPostPerma = encodeURIComponent(permalinkWorkAround) %>
 <% var encodedPostTitle = encodeURIComponent(item.title) %>
 
       <h5>share this post:</h5>
+
       <a class="share-link" href="http://www.tumblr.com/share/link?url=<%= encodedPostPerma %>"  target="_blank">
         <span class="share-icon icon-social-tumblr"></span>
       </a>
