@@ -44,6 +44,9 @@
 }
 img {
   margin: 15px 0;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 }
 .post-body {
@@ -94,7 +97,44 @@ img {
 }
 
 .comment-link-wrapper {
-
   float: right;
+}
 
+.code {
+  padding: 0px;
+  vertical-align: baseline;
+  .highlight.line.marked, .line.marked {
+    color: $orange;
+    // background-color: white;
+  }
+}
+
+.video-container {
+  position: relative;
+  padding-top: 56.9%;
+  height: 0;
+  overflow: hidden;
+
+  iframe, object, embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+blockquote.pullquote.left {
+    float: left;
+    border: none;
+    margin: 0 10px;
+    width: 40%;
+}
+
+blockquote.pullquote.right {
+    float: right;
+    border: none;
+    margin: 0 10px;
+    width: 40%;
 }

@@ -1,4 +1,8 @@
 <header>
 <h1 class='blog-title'><a href="<%= config.root %>"><%= config.title %></a></h1>
-<h4 class='tagline'><%= config.subtitle %></h4>
+<% if (config.description) { %>
+<h4 class='tagline'><%= config.description %></h4>
+<% } else { %>
+  <h4 class='tagline'><%= config.author %></h4>
+<% } %>
 </header>

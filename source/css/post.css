@@ -30,7 +30,10 @@
   font-family: "Source Serif Pro", serif; }
 
 .post-content img {
-  margin: 15px 0; }
+  margin: 15px 0;
+  display: block;
+  max-width: 100%;
+  height: auto; }
 
 .post-body {
   padding: 0 30px 20px 30px; }
@@ -67,3 +70,34 @@
 
 .comment-link-wrapper {
   float: right; }
+
+.code {
+  padding: 0px;
+  vertical-align: baseline; }
+  .code .highlight.line.marked, .code .line.marked {
+    color: #f37100; }
+
+.video-container {
+  position: relative;
+  padding-top: 56.9%;
+  height: 0;
+  overflow: hidden; }
+  .video-container iframe, .video-container object, .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    margin-top: 0; }
+
+blockquote.pullquote.left {
+  float: left;
+  border: none;
+  margin: 0 10px;
+  width: 40%; }
+
+blockquote.pullquote.right {
+  float: right;
+  border: none;
+  margin: 0 10px;
+  width: 40%; }
