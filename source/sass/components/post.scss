@@ -29,38 +29,48 @@
 
 .post-title a {
   color: black;
-  font-family: $serif;
 
   &:hover {
     color: $orange;
     text-decoration: none;
   }
 }
-.post-content {
-  h2 {
-  font-size: 20px;
-  color: black;
-  font-family: $serif;
-}
-img {
-  margin: 15px 0;
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-}
+
+
 .post-body {
   padding: 0 30px 20px 30px;
-  p {
-  color: $black;
-  font-family: $sans;
-  font-size: 1.1em;
+}
+
+.post-content {
+  img {
+    margin: 15px 0;
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  h1, h2, h3, h4, h5, h6, th, dl {
+    color: black;
+    font-family: $serif;
+  }
+
+  p, dd, li, td {
+    color: $black;
+    font-family: $sans;
+    font-size: 1.1em;
+  }
+
+  table thead th, table tbody tr td:not(.code, .gutter) {
+    padding: 1em;
+    border-bottom: 1px solid $black;
+  }
+
 
   a, a:hover {
     color: $orange
   }
-  }
 }
+
 
 .post-footer {
   margin-top: 20px;
