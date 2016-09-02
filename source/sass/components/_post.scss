@@ -60,7 +60,7 @@
     font-size: 1.1em;
   }
 
-  table thead th, table tbody tr td:not(.code, .gutter) {
+  table thead tr th, table tbody tr td:not(.code):not(.gutter):not(.blob-num):not(.blob-code) {
     padding: 1em;
     border-bottom: 1px solid $black;
   }
