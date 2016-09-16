@@ -205,7 +205,10 @@ nav {
   padding: 0px;
   vertical-align: baseline; }
   .code .highlight.line.marked, .code .line.marked {
-    color: #f37100; }
+    color: #cc2255; }
+
+.line {
+  height: 20px; }
 
 .video-container {
   position: relative;

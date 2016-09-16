@@ -36,7 +36,6 @@
   }
 }
 
-
 .post-body {
   padding: 0 30px 20px 30px;
 }
@@ -114,9 +113,12 @@
   padding: 0px;
   vertical-align: baseline;
   .highlight.line.marked, .line.marked {
-    color: $orange;
-    // background-color: white;
+    color: rgb(204, 34, 85);
   }
+}
+
+.line {
+  height: 20px;
 }
 
 .video-container {
