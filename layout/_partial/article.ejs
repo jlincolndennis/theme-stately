@@ -33,7 +33,9 @@
   <h1 class='post-title'><a href="<%= config.root + item.path %>"><%= item.title %></a></h1>
 
   <div class="post-content">
+    <% if (item.photos && item.photos.length){ %>
     <%- partial('gallery') %>
+    <% } %>
 
     <% if(page.layout !== 'post' && item.excerpt){ %>
     <%- item.excerpt %>
