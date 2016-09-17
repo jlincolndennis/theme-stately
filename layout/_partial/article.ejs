@@ -30,7 +30,16 @@
 
   </aside>
   <div class="post-body col-md-8">
-  <h1 class='post-title'><a href="<%= config.root + item.path %>"><%= item.title %></a></h1>
+    <% if (item.link) { %>
+      <h1 class='post-title'><a href="<%- url_for(item.link) %>" target="_blank">
+        <%- item.title || item.link %>
+      </a></h1>
+    <% } else { %>
+      <h1 class='post-title'><a href="<%- url_for(item.path) %>">
+        <%= item.title %>
+      </a></h1>
+    <% } %>
+
 
   <div class="post-content">
     <% if (item.photos && item.photos.length){ %>

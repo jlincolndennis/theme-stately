@@ -4,8 +4,15 @@
 
   </aside>
   <div class="post-body col-md-8">
-  <h2 class='post-title'><a href="<%= config.root + item.path %>"><%= item.title %></a></h2>
-
+    <% if (item.link) { %>
+      <h2 class='post-title'><a href="<%- url_for(item.link) %>" target="_blank">
+        <%- item.title || item.link %>
+      </a></h2>
+    <% } else { %>
+      <h2 class='post-title'><a href="<%- url_for(item.path) %>">
+        <%= item.title %>
+      </a></h2>
+    <% } %>
   <div class="post-content">
     <%- item.excerpt %>
     <br>
