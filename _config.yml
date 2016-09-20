@@ -4,7 +4,7 @@ menu:
   about: /about
   archives: /archives
   tags: /tags
-  categories: /categories
+  # categories: /categories
 
 # Read More text
 excerpt_link: "Keep Reading..."
@@ -15,7 +15,7 @@ google_analytics: false
 
 # Share links
 show_share_links: true
-twitter_handle: testhandle
+twitter_handle: jlincolndennis
 
 # Comments
-disqus_shortname: jlincolndennistestblog
+disqus_shortname: jlincolndennis
