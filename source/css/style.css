@@ -43,10 +43,6 @@ html {
 body {
   background: white; }
 
-cite {
-  margin-left: 5px;
-  margin-right: 5px; }
-
 span.glyphicon {
   margin-right: 5px; }
 
@@ -174,32 +170,9 @@ nav {
 .post-content a, .post-content a:hover {
   color: #f37100; }
 
-.post-footer {
-  margin-top: 20px; }
-  .post-footer h5 {
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: lighter;
-    display: inline-block; }
-
-.share-link, .comment-link {
-  color: #323232; }
-  .share-link:hover, .comment-link:hover {
-    color: #f37100;
-    text-decoration: none; }
-  .share-link:focus, .comment-link:focus {
-    color: #323232;
-    text-decoration: none; }
-
-.share-icon {
-  font-size: 1.2em;
-  margin-right: 5px;
-  margin-left: 5px; }
-
-.comments {
-  margin-top: 20px; }
-
-.comment-link-wrapper {
-  float: right; }
+cite {
+  margin-left: 5px;
+  margin-right: 5px; }
 
 .code {
   padding: 0px;
@@ -234,3 +207,30 @@ blockquote.pullquote.right {
   border: none;
   margin: 0 10px;
   width: 40%; }
+
+.post-footer {
+  margin-top: 20px; }
+  .post-footer h5 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: lighter;
+    display: inline-block; }
+
+.share-link, .comment-link {
+  color: #323232; }
+  .share-link:hover, .comment-link:hover {
+    color: #f37100;
+    text-decoration: none; }
+  .share-link:focus, .comment-link:focus {
+    color: #323232;
+    text-decoration: none; }
+
+.share-icon {
+  font-size: 1.2em;
+  margin-right: 5px;
+  margin-left: 5px; }
+
+.comments {
+  margin-top: 20px; }
+
+.comment-link-wrapper {
+  float: right; }

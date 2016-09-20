@@ -18,7 +18,7 @@
     color: $black;
 
     &:hover {
-      color: $orange
+      color: $trim
     }
   }
 }
@@ -31,7 +31,7 @@
   color: black;
 
   &:hover {
-    color: $orange;
+    color: $trim;
     text-decoration: none;
   }
 }
@@ -64,49 +64,14 @@
     border-bottom: 1px solid $black;
   }
 
-
   a, a:hover {
-    color: $orange
+    color: $trim
   }
 }
 
-
-.post-footer {
-  margin-top: 20px;
-
-  h5 {
-    font-family: $sans;
-    font-weight: lighter;
-    display: inline-block;
-  }
-}
-
-.share-link, .comment-link {
-  color: $black;
-
-  &:hover {
-    color: $orange;
-    text-decoration: none;
-  }
-
-  &:focus {
-    color: $black;
-    text-decoration: none;
-  }
-}
-
-.share-icon {
-  font-size: 1.2em;
-  margin-right: 5px;
+cite {
   margin-left: 5px;
-}
-
-.comments {
-  margin-top: 20px;
-}
-
-.comment-link-wrapper {
-  float: right;
+  margin-right: 5px;
 }
 
 .code {
@@ -149,4 +114,42 @@ blockquote.pullquote.right {
     border: none;
     margin: 0 10px;
     width: 40%;
+}
+
+.post-footer {
+  margin-top: 20px;
+
+  h5 {
+    font-family: $sans;
+    font-weight: lighter;
+    display: inline-block;
+  }
+}
+
+.share-link, .comment-link {
+  color: $black;
+
+  &:hover {
+    color: $trim;
+    text-decoration: none;
+  }
+
+  &:focus {
+    color: $black;
+    text-decoration: none;
+  }
+}
+
+.share-icon {
+  font-size: 1.2em;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.comments {
+  margin-top: 20px;
+}
+
+.comment-link-wrapper {
+  float: right;
 }

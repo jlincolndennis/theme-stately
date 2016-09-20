@@ -2,18 +2,12 @@
 @import 'fonts';
 
 html {
-  border-left: 8px solid $orange;
+  border-left: 8px solid $trim;
 }
 
 body {
   background: $white;
 }
-
-cite {
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
 
 span.glyphicon{
   margin-right: 5px;
@@ -24,7 +18,7 @@ span.glyphicon{
 }
 
 a.read-more {
-  color: $orange;
+  color: $trim;
   text-decoration: none;
 
   &:hover {
@@ -38,7 +32,7 @@ a.read-more {
   margin: -50px auto 0;
 }
 .pager li a{
-  color: $orange;
+  color: $trim;
 
 
 }
@@ -53,24 +47,23 @@ a.read-more {
   margin-top: 60px;
 
   p a {
-    color: $orange;
+    color: $trim;
 
     &:hover {
-      color: $orange;
+      color: $trim;
     }
+  }
 
-    }
   ul {
     li {
       margin: 10px;
       a {
-        color: $orange;
+        color: $trim;
 
         &:hover {
-          color: $orange;
-
+          color: $trim;
         }
+      }
     }
   }
-}
 }

@@ -3,16 +3,18 @@
 
 header {
   display: inline-block;
+
   .blog-title {
     font-family: $serif;
     display: inline-block;
     margin-left:20px;
     margin-bottom: 0;
+
     a {
       color: black;
 
       &:hover {
-        color: $orange;
+        color: $trim;
         text-decoration: none;
       }
     }
@@ -39,18 +41,15 @@ nav {
     margin-left: 15px;
     text-align: center;
     float: none;
-
   }
 
   a {
-    color: $orange;
+    color: $trim;
     font-size: 18px;
     margin-left: 5px;
 
     &:hover {
-      color: $orange;
-      // font-weight: normal;
-
+      color: $trim;
     }
   }
 }
