@@ -1,47 +1,47 @@
 .archive-title {
-  font-family: "Source Serif Pro", serif; }
+  font-family: "Crimson Text"; }
   .archive-title a {
-    color: #323232;
+    color: #313131;
     text-decoration: none; }
     .archive-title a:hover {
-      color: #f37100; }
+      color: #F17105; }
 
 .archive-year {
   margin-top: 20px;
-  font-family: "Source Serif Pro", serif; }
+  font-family: "Crimson Text"; }
   .archive-year a {
-    color: #323232;
+    color: #313131;
     text-decoration: none; }
     .archive-year a:hover {
-      color: #f37100; }
+      color: #F17105; }
 
 .archive-month {
   margin-top: 20px;
   margin-bottom: 0px;
-  font-family: "Source Serif Pro", serif; }
+  font-family: "Crimson Text"; }
   .archive-month a {
-    color: #323232;
+    color: #313131;
     text-decoration: none; }
     .archive-month a:hover {
-      color: #f37100; }
+      color: #F17105; }
 
 .archive-tag {
   margin-top: 10px;
   margin-left: 10px;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Proza Libre";
   font-size: 16px;
   font-weight: lighter; }
   .archive-tag a {
-    color: #323232;
+    color: #313131;
     text-decoration: none; }
     .archive-tag a:hover {
-      color: #f37100; }
+      color: #F17105; }
 
 html {
-  border-left: 8px solid #f37100; }
+  border-left: 10px solid #F17105; }
 
 body {
-  background: white; }
+  background: #FDFDFD; }
 
 span.glyphicon {
   margin-right: 5px; }
@@ -50,7 +50,7 @@ span.glyphicon {
   margin-top: 50px; }
 
 a.read-more {
-  color: #f37100;
+  color: #F17105;
   text-decoration: none; }
   a.read-more:hover {
     text-decoration: underline; }
@@ -61,10 +61,10 @@ a.read-more {
   margin: -50px auto 0; }
 
 .pager li a {
-  color: #f37100; }
+  color: #F17105; }
 
 .doc-footer {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Crimson Text";
   font-weight: lighter;
   font-size: 16px;
   clear: both;
@@ -72,31 +72,32 @@ a.read-more {
   text-align: center;
   margin-top: 60px; }
   .doc-footer p a {
-    color: #f37100; }
+    color: #F17105; }
     .doc-footer p a:hover {
-      color: #f37100; }
+      color: #F17105; }
   .doc-footer ul li {
     margin: 10px; }
     .doc-footer ul li a {
-      color: #f37100; }
+      color: #F17105; }
       .doc-footer ul li a:hover {
-        color: #f37100; }
+        color: #F17105; }
 
 header {
   display: inline-block; }
   header .blog-title {
-    font-family: "Source Serif Pro", serif;
+    font-family: "Proza Libre";
     display: inline-block;
     margin-left: 20px;
     margin-bottom: 0; }
+    header .blog-title .title-trim {
+      color: #F17105; }
     header .blog-title a {
-      color: black; }
+      color: #313131; }
       header .blog-title a:hover {
-        color: #f37100;
+        color: #F17105;
         text-decoration: none; }
   header .tagline {
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: lighter;
+    font-family: "Crimson Text";
     display: inline-block;
     margin-left: 20px; }
 
@@ -105,8 +106,7 @@ nav {
   margin-top: 30px;
   margin-right: 30px;
   display: inline-block;
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: lighter; }
+  font-family: "Crimson Text"; }
   @media (max-width: 999px) {
     nav {
       margin-top: 5px;
@@ -114,35 +114,38 @@ nav {
       text-align: center;
       float: none; } }
   nav a {
-    color: #f37100;
+    color: #F17105;
     font-size: 18px;
     margin-left: 5px; }
     nav a:hover {
-      color: #f37100; }
+      color: #F17105; }
 
 .post {
   margin-bottom: 70px; }
 
 .posted-on {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Proza Libre";
+  font-size: 1.1em;
   margin-top: 30px; }
 
+.post-details {
+  margin-bottom: 25px; }
+
 .tag, .category {
-  margin-top: 20px;
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: lighter; }
+  font-family: "Crimson Text"; }
   .tag a, .category a {
-    color: #323232; }
+    color: #313131; }
     .tag a:hover, .category a:hover {
-      color: #f37100; }
+      color: #F17105; }
 
 .post-title {
-  font-family: "Source Serif Pro", serif; }
+  font-family: "Crimson Text";
+  font-size: 2.2em; }
 
 .post-title a {
-  color: black; }
+  color: #313131; }
   .post-title a:hover {
-    color: #f37100;
+    color: #F17105;
     text-decoration: none; }
 
 .post-body {
@@ -154,25 +157,32 @@ nav {
   max-width: 100%;
   height: auto; }
 
-.post-content h1, .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6, .post-content th, .post-content dl {
-  color: black;
-  font-family: "Source Serif Pro", serif; }
+.post-content h1, .post-content h2, .post-content h4, .post-content h5, .post-content h6, .post-content th, .post-content dl {
+  color: #313131;
+  font-family: "Crimson Text"; }
+
+.post-content h3 {
+  color: #313131;
+  font-family: "Proza Libre";
+  font-size: 1.3em;
+  margin-top: 0px;
+  margin-bottom: 25px; }
 
 .post-content p, .post-content dd, .post-content li, .post-content td {
-  color: #323232;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 1.2em;
-  font-weight: lighter; }
+  color: #313131;
+  font-family: "Crimson Text";
+  font-size: 1.1em; }
 
 .post-content p {
+  margin-bottom: 25px;
   line-height: 1.75; }
 
 .post-content table thead tr th, .post-content table tbody tr td:not(.code):not(.gutter):not(.blob-num):not(.blob-code) {
   padding: 1em;
-  border-bottom: 1px solid #323232; }
+  border-bottom: 1px solid #313131; }
 
 .post-content a, .post-content a:hover {
-  color: #f37100; }
+  color: #F17105; }
 
 cite {
   margin-left: 5px;
@@ -215,17 +225,17 @@ blockquote.pullquote.right {
 .post-footer {
   margin-top: 20px; }
   .post-footer h5 {
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: "Proza Libre";
     font-weight: lighter;
     display: inline-block; }
 
 .share-link, .comment-link {
-  color: #323232; }
+  color: #313131; }
   .share-link:hover, .comment-link:hover {
-    color: #f37100;
+    color: #F17105;
     text-decoration: none; }
   .share-link:focus, .comment-link:focus {
-    color: #323232;
+    color: #313131;
     text-decoration: none; }
 
 .share-icon {

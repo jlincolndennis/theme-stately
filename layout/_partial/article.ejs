@@ -1,5 +1,5 @@
 <article class="post row">
-  <aside class="post-details col-md-2">
+  <aside class="post-details col-md-4 col-md-push-8">
     <h4 class='posted-on'><%= date(item.date) %></h4>
     <p class="category">
       <% if (item.categories && item.categories.length){ %>
@@ -23,13 +23,15 @@
 
           });
       %>
-          <span class="glyphicon glyphicon-tags"></span>
+          <!-- <span class="glyphicon glyphicon-tags"></span> -->
+          Filed Under:
           <%- tags.join(', ') %>
       <% } %>
     </p>
 
   </aside>
-  <div class="post-body col-md-8">
+
+  <div class="post-body col-md-8 col-md-pull-4">
     <% if (item.link) { %>
       <h1 class='post-title'><a href="<%- url_for(item.link) %>" target="_blank">
         <%- item.title || item.link %>
@@ -72,5 +74,6 @@
   </footer>
 
 </div>
+
 
 </article>

@@ -7,13 +7,16 @@
 
 .posted-on {
   font-family: $sans;
+  font-size: 1.1em;
   margin-top: 30px;
 }
 
+.post-details {
+  margin-bottom: 25px;
+}
+
 .tag, .category {
-  margin-top: 20px;
-  font-family: $sans;
-  font-weight: lighter;
+  font-family: $serif;
   a {
     color: $black;
 
@@ -25,10 +28,11 @@
 
 .post-title {
   font-family: $serif;
+  font-size: 2.2em;
 }
 
 .post-title a {
-  color: black;
+  color: $black;
 
   &:hover {
     color: $trim;
@@ -48,19 +52,28 @@
     height: auto;
   }
 
-  h1, h2, h3, h4, h5, h6, th, dl {
-    color: black;
+  h1, h2, h4, h5, h6, th, dl {
+    color: $black;
     font-family: $serif;
+  }
+
+  h3 {
+    color: $black;
+    font-family: $sans;
+    font-size: 1.3em;
+    margin-top: 0px;
+    margin-bottom: 25px;
+
   }
 
   p, dd, li, td {
     color: $black;
-    font-family: $sans;
-    font-size: 1.2em;
-    font-weight: lighter;
+    font-family: $serif;
+    font-size: 1.1em;
   }
 
   p {
+    margin-bottom: 25px;
     line-height: 1.75;
   }
 
