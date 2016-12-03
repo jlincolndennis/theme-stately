@@ -56,7 +56,12 @@
   p, dd, li, td {
     color: $black;
     font-family: $sans;
-    font-size: 1.1em;
+    font-size: 1.2em;
+    font-weight: lighter;
+  }
+
+  p {
+    line-height: 1.75;
   }
 
   table thead tr th, table tbody tr td:not(.code):not(.gutter):not(.blob-num):not(.blob-code) {

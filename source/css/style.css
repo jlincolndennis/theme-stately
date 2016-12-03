@@ -161,7 +161,11 @@ nav {
 .post-content p, .post-content dd, .post-content li, .post-content td {
   color: #323232;
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 1.1em; }
+  font-size: 1.2em;
+  font-weight: lighter; }
+
+.post-content p {
+  line-height: 1.75; }
 
 .post-content table thead tr th, .post-content table tbody tr td:not(.code):not(.gutter):not(.blob-num):not(.blob-code) {
   padding: 1em;

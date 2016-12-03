@@ -2,6 +2,7 @@
 menu:
   home: /
   about: /about
+  portfolio: 'http://www.jlincolndennis.com'
   archives: /archives
   tags: /tags
   # categories: /categories
