@@ -1,5 +1,6 @@
 .archive-title {
-  font-family: "Crimson Text"; }
+  font-family: "Proza Libre";
+  font-size: 1.5em; }
   .archive-title a {
     color: #313131;
     text-decoration: none; }
@@ -7,8 +8,9 @@
       color: #F17105; }
 
 .archive-year {
+  font-size: 1.5em;
   margin-top: 20px;
-  font-family: "Crimson Text"; }
+  font-family: "Proza Libre"; }
   .archive-year a {
     color: #313131;
     text-decoration: none; }
@@ -16,9 +18,11 @@
       color: #F17105; }
 
 .archive-month {
+  font-size: 1.5em;
   margin-top: 20px;
+  margin-left: 25px;
   margin-bottom: 0px;
-  font-family: "Crimson Text"; }
+  font-family: "Proza Libre"; }
   .archive-month a {
     color: #313131;
     text-decoration: none; }
@@ -92,10 +96,10 @@ header {
     header .blog-title .title-trim {
       color: #F17105; }
     header .blog-title a {
-      color: #313131; }
+      color: #313131;
+      text-decoration: none; }
       header .blog-title a:hover {
-        color: #F17105;
-        text-decoration: none; }
+        color: #F17105; }
   header .tagline {
     font-family: "Crimson Text";
     display: inline-block;

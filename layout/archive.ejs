@@ -20,11 +20,11 @@
   <% var monthNumber = ("0" + monthIndex).slice(-2); %>
 
   <% if (lastYear != year && !page.year){ %>
-    <h2 class="archive-year"><a href="<%- url_for(config.archive_dir + '/' + year) %>"><%= year %></a></h2>
+    <h3 class="archive-year"><a href="<%- url_for(config.archive_dir + '/' + year) %>"><%= year %></a></h3>
   <% } %>
 
   <% if (lastMonth != month && !page.month){ %>
-    <h3 class="archive-month"><a href="<%- url_for(config.archive_dir + '/' + year + '/' + monthNumber) %>">- <%= month %> -</a></h3>
+    <h3 class="archive-month"><a href="<%- url_for(config.archive_dir + '/' + year + '/' + monthNumber) %>"><%= month %></a></h3>
   <% } %>
 
   <% if (page.year || page.month){ %>

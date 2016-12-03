@@ -2,11 +2,13 @@
 @import 'fonts';
 
 .archive-title {
-  font-family: $serif;
+  font-family: $sans;
+  font-size: 1.5em;
 
   a {
     color: $black;
     text-decoration: none;
+
 
     &:hover {
       color: $trim;
@@ -15,8 +17,9 @@
 }
 
 .archive-year {
+  font-size: 1.5em;
   margin-top: 20px;
-  font-family: $serif;
+  font-family: $sans;
 
   a {
     color: $black;
@@ -29,9 +32,11 @@
 }
 
 .archive-month {
+  font-size: 1.5em;
   margin-top: 20px;
+  margin-left: 25px;
   margin-bottom: 0px;
-  font-family: $serif;
+  font-family: $sans;
 
   a {
     color: $black;
