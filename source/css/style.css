@@ -47,7 +47,7 @@ html {
 body {
   border-left: 10px solid #F17105;
   background: #FDFDFD;
-  padding-bottom: 225px; }
+  padding-bottom: 200px; }
 
 span.glyphicon {
   margin-right: 5px; }
@@ -70,13 +70,11 @@ a.read-more {
 .pager li a {
   color: #F17105; }
 
-footer {
+.doc-footer {
   position: absolute;
   bottom: 0;
   width: 99%;
-  clear: both; }
-
-.doc-footer {
+  clear: both;
   font-family: "Crimson Text";
   font-weight: lighter;
   font-size: 16px;

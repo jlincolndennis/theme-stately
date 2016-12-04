@@ -9,7 +9,7 @@ html {
 body {
   border-left: 10px solid $trim;
   background: $white;
-  padding-bottom: 225px;
+  padding-bottom: 200px;
 
 }
 
@@ -40,21 +40,16 @@ a.read-more {
   color: $trim;
 }
 
-footer {
+
+.doc-footer {
   position: absolute;
   bottom: 0;
   width: 99%;
   clear: both;
-
-
-}
-
-.doc-footer {
   font-family: $serif;
   font-weight: lighter;
   font-size: 16px;
   text-align: center;
-  // margin-top: 60px;
 
   p a {
     color: $trim;
