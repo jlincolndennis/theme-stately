@@ -32,6 +32,15 @@ header {
   }
 }
 
+.author-link {
+  color: $black;
+
+  &:hover {
+    color: $trim;
+    text-decoration: none;
+  }
+}
+
 nav {
   float: right;
   margin-top: 30px;

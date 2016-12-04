@@ -2,7 +2,7 @@
 @import 'fonts';
 
 .post {
-  margin-bottom: 70px;
+  margin-bottom: 100px;
 }
 
 .posted-on {
@@ -21,7 +21,8 @@
     color: $black;
 
     &:hover {
-      color: $trim
+      color: $trim;
+      text-decoration: none;
     }
   }
 }

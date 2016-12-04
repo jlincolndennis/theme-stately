@@ -33,8 +33,7 @@
   margin-top: 10px;
   margin-left: 10px;
   font-family: "Proza Libre";
-  font-size: 16px;
-  font-weight: lighter; }
+  font-size: 1em; }
   .archive-tag a {
     color: #313131;
     text-decoration: none; }
@@ -42,10 +41,13 @@
       color: #F17105; }
 
 html {
-  border-left: 10px solid #F17105; }
+  position: relative;
+  min-height: 100%; }
 
 body {
-  background: #FDFDFD; }
+  border-left: 10px solid #F17105;
+  background: #FDFDFD;
+  padding-bottom: 225px; }
 
 span.glyphicon {
   margin-right: 5px; }
@@ -54,6 +56,7 @@ span.glyphicon {
   margin-top: 50px; }
 
 a.read-more {
+  font-family: "Proza Libre";
   color: #F17105;
   text-decoration: none; }
   a.read-more:hover {
@@ -67,14 +70,17 @@ a.read-more {
 .pager li a {
   color: #F17105; }
 
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 99%;
+  clear: both; }
+
 .doc-footer {
   font-family: "Crimson Text";
   font-weight: lighter;
   font-size: 16px;
-  clear: both;
-  display: block;
-  text-align: center;
-  margin-top: 60px; }
+  text-align: center; }
   .doc-footer p a {
     color: #F17105; }
     .doc-footer p a:hover {
@@ -105,6 +111,12 @@ header {
     display: inline-block;
     margin-left: 20px; }
 
+.author-link {
+  color: #313131; }
+  .author-link:hover {
+    color: #F17105;
+    text-decoration: none; }
+
 nav {
   float: right;
   margin-top: 30px;
@@ -125,7 +137,7 @@ nav {
       color: #F17105; }
 
 .post {
-  margin-bottom: 70px; }
+  margin-bottom: 100px; }
 
 .posted-on {
   font-family: "Proza Libre";
@@ -140,7 +152,8 @@ nav {
   .tag a, .category a {
     color: #313131; }
     .tag a:hover, .category a:hover {
-      color: #F17105; }
+      color: #F17105;
+      text-decoration: none; }
 
 .post-title {
   font-family: "Crimson Text";
